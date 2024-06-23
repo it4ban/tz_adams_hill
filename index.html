@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Rick & Morty</title>
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="/css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<a href="/" class="logo">
+				<div class="logo__item">
+					<img class="logo__item__img" src="img/logo-black.png" alt="logo" />
+					<span class="logo__item__title">Тестовое задание Rick & Morty</span>
+				</div>
+			</a>
+		</header>
+		<main class="main">
+			<div class="search">
+				<input id="search-input" placeholder="Введите имя персонажа..." type="text" class="search__input" />
+				<button id="search-button">Поиск</button>
+			</div>
+			<div id="root" class="characters"></div>
+			<div id="navigation" class="pagination"></div>
+		</main>
+		<footer class="footer">Выполнил Ягодкин Александр</footer>
+		<script type="module" src="js/index.js"></script>
+	</body>
+</html>
