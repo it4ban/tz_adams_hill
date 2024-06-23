@@ -1,6 +1,6 @@
 import { fetchCharacters } from './api.js';
 import { renderCharacters } from './render.js';
-//import { getFilters } from './utils.js';
+import { getFilters } from './utils.js';
 
 let currentPage = 1;
 let totalPages = 1;
@@ -57,8 +57,8 @@ function createPageButton(page, isActive = false) {
 	button.addEventListener('click', async () => {
 		currentPage = page;
 		const query = document.getElementById('search-input').value;
-		//const filters = getFilters();
-		const { characters } = await fetchCharacters(currentPage, query);
+		const filters = getFilters();
+		const { characters } = await fetchCharacters(currentPage, query, filters);
 		renderCharacters(characters);
 	});
 	return button;

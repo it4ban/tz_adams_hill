@@ -21,4 +21,39 @@ function renderCharacters(characters) {
 	renderPagination();
 }
 
-export { renderCharacters };
+function renderFilterOptions(options) {
+	const statusSelect = document.getElementById('status');
+	const speciesSelect = document.getElementById('species');
+	const typeSelect = document.getElementById('type');
+	const genderSelect = document.getElementById('gender');
+
+	options.statuses.forEach((status) => {
+		const option = document.createElement('option');
+		option.value = status.toLowerCase();
+		option.textContent = status;
+		statusSelect.appendChild(option);
+	});
+
+	options.species.forEach((species) => {
+		const option = document.createElement('option');
+		option.value = species.toLowerCase();
+		option.textContent = species;
+		speciesSelect.appendChild(option);
+	});
+
+	options.types.forEach((type) => {
+		const option = document.createElement('option');
+		option.value = type.toLowerCase();
+		option.textContent = type;
+		typeSelect.appendChild(option);
+	});
+
+	options.genders.forEach((gender) => {
+		const option = document.createElement('option');
+		option.value = gender.toLowerCase();
+		option.textContent = gender;
+		genderSelect.appendChild(option);
+	});
+}
+
+export { renderCharacters, renderFilterOptions };
