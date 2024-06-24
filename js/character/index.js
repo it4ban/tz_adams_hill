@@ -20,7 +20,7 @@ function renderCharacterData(characterData) {
             <p>${characterData.gender}</p>
             <p>${characterData.origin.name}</p>
             <p>${characterData.location.name}</p>
-            <a href="/index.html">Назад</a>
+            <a href="./index.html">Назад</a>
         </div>
     `;
 }
