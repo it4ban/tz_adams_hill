@@ -11,7 +11,7 @@ function renderCharacterData(characterData) {
 	const character = document.querySelector('#root');
 
 	character.innerHTML = `
-        <div class="character-card">
+        <div class="character__card">
             <img src="${characterData.image}" alt="${characterData.name}">
             <h2>${characterData.name}</h2>
             <p>${characterData.status}</p>

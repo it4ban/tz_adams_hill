@@ -7,7 +7,7 @@ function renderCharacters(characters) {
 	characters.forEach((character) => {
 		const characterCard = document.createElement('a');
 		characterCard.href = `./character.html?url=${character.url}`;
-		characterCard.classList.add('character-card');
+		characterCard.classList.add('character__card');
 		characterCard.innerHTML = `
             <img src="${character.image}" alt="${character.name}">
             <h3>${character.name}</h3>
