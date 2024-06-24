@@ -5,7 +5,8 @@ const charactersContainer = document.getElementById('root');
 function renderCharacters(characters) {
 	charactersContainer.innerHTML = '';
 	characters.forEach((character) => {
-		const characterCard = document.createElement('div');
+		const characterCard = document.createElement('a');
+		characterCard.href = `./character.html?url=${character.url}`;
 		characterCard.classList.add('character-card');
 		characterCard.innerHTML = `
             <img src="${character.image}" alt="${character.name}">

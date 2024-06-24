@@ -7,4 +7,11 @@ function getFilters() {
 	};
 }
 
-export { getFilters };
+async function getUrlLocation(url) {
+	const response = await fetch(url);
+	const data = await response.json();
+
+	return data;
+}
+
+export { getFilters, getUrlLocation };

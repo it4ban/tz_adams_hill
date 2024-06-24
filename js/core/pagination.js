@@ -1,6 +1,6 @@
 import { fetchCharacters } from './api.js';
 import { renderCharacters } from './render.js';
-import { getFilters } from './utils.js';
+import { getFilters } from '../utils/utils.js';
 
 let currentPage = 1;
 let totalPages = 1;
