@@ -7,7 +7,7 @@
 
 
 
-**Стэк технолог:** HTML5, CSS, JavaScript
+**Стэк технологий:** HTML5, CSS, JavaScript
 
 
 
